@@ -152,6 +152,7 @@ const showResult = () => {
   let span = document.createElement("span");
   let textSpan;
   if(currentIndex === questionsCount) {
+    resultContainer.style.display="block";
     quizArea.remove();
     answersArea.remove();
     submitBtn.remove();
