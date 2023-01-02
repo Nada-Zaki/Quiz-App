@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;  
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .quiz-app, .start {
+    width: 80%;
+    background-color: #f8f8f8;
+    padding: 1.2rem;
+  }
+
+  .quiz-app .quiz-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .quiz-area,h2 {
+    background-color: #fff;
+    padding: 1.4rem;
+    margin-top: 1.2rem;
+  }
+
+  .answers-area, .categories-area {
+    background-color: #fff;
+    padding: 0 1.4rem 1.4rem;
+  }
+
+  .answer {
+    background-color: #f9f9f9;
+    padding: 1.3rem;
+  }
+
+  .answer:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  .answer input[type="Radio"]:checked + label {
+    color: #0075ff;
+  }
+  
+  .answer label {
+    cursor: pointer;
+    font-weight: bold;
+    color: #777;
+    font-size: 1.3rem;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+  }
+
+  button {
+    background-color: #0075ff;
+    display: block;
+    width: 80%;
+    padding: 1.1rem;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 1.4rem auto;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  .bullets {
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    display: flex;
+    padding: 1.4rem;
+  }
+  
+  .bullets .spans {
+    flex: 1;
+    display: flex;
+  }
+
+  .bullets .spans span {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #ddd;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+
+  .bullets .spans span.on {
+    background-color: #0075ff;
+  }
+
+  .results {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size:1.8rem;
+    padding:1.4rem;
+    background-color:white;
+    margin-top:1.4rem;
+  }
+
+  .results span {
+    font-weight: bold;
+  }
+
+  .results span.bad {
+    color: #dc0a0a;
+  }
+
+  .results span.good {
+    color: #009688;
+  }
+
+  .results span.excellent {
+    color: #0075ff;
+  }
+
+
+
+  @media only screen and (max-width:767px) {
+    html {
+      font-size: 8px;
+    }
+  }
+
+  @media only screen and (max-width:300px) {
+    html {
+      font-size: 6px;
+    }
+  }
