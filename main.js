@@ -17,7 +17,7 @@ let countDownDiv = document.querySelector(".countdown");
 let currentIndex = 0;
 let rightAnswers = 0;
 let answersNumber = 4;
-let duration = 5;
+let duration = 15;
 let questionsCount;
 let category;
 let countDownInterval;
